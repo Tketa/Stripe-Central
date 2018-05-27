@@ -19,12 +19,6 @@ class CardSection extends React.Component {
       <label>
         Card details
         <CardElement style={{base: {fontSize: '18px'}}} onReady={(el) => el.focus()} onChange={this.props.handleChange}/>
-        
-        {/* <CardNumberElement />
-        <CardExpiryElement />
-        <CardCVCElement />
-        <PostalCodeElement />
-        <PaymentRequestButtonElement /> */}
       </label>
     );
   }

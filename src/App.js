@@ -8,8 +8,8 @@ import './App.css';
 
 const { publicKey , secretKey} = require('./env.json');
 
-const SupperCheckouts = withStripe(Checkouts, publicKey, secretKey);
-const SupperPayments = withStripe(Payments, publicKey, secretKey);
+const SuperCheckouts = withStripe(Checkouts, publicKey, secretKey);
+const SuperPayments = withStripe(Payments, publicKey, secretKey);
 
 
 
@@ -22,10 +22,10 @@ class App extends Component {
     return (
       <Tabs>
         <Tab name="Checkouts">
-          <SupperCheckouts />
+          <SuperCheckouts />
         </Tab>
         <Tab name="Payments">
-          <SupperPayments />
+          <SuperPayments />
         </Tab>
       </Tabs>
     );
